@@ -1,4 +1,5 @@
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -12,7 +13,7 @@ extension Extension on BuildContext {
 
   ColorScheme get colors => Theme.of(this).colorScheme;
 
-  AppLocalizations get strings => AppLocalizations.of(this);
+  AppLocalizations get strings => AppLocalizations.of(this)!;
 
   Future<Map<String, dynamic>?> loadJson(
     BuildContext context,
